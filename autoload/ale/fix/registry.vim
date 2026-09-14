@@ -178,7 +178,7 @@ let s:default_registry = {
 \   },
 \   'oxfmt': {
 \       'function': 'ale#fixers#oxfmt#Fix',
-\       'suggested_filetypes': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'json5', 'graphql', 'toml', 'yaml'],
+\       'suggested_filetypes': ['javascript', 'typescript', 'typescriptreact', 'css', 'less', 'scss', 'json', 'json5', 'graphql', 'toml', 'yaml'],
 \       'description': 'Apply oxfmt to a file.',
 \   },
 \   'mix_format': {
