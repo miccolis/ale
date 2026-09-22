@@ -1,3 +1,6 @@
+" Author: Jeff Miccolis<jeff@miccolis.net>
+" Description: oxlint for JavaScript files.
+
 call ale#linter#Define('javascript', {
 \   'name': 'oxlint',
 \   'lsp': 'stdio',

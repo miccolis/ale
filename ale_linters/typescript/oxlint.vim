@@ -1,3 +1,6 @@
+" Author: Jeff Miccolis<jeff@miccolis.net>
+" Description: oxlint for TypeScript files.
+
 call ale#linter#Define('typescript', {
 \   'name': 'oxlint',
 \   'lsp': 'stdio',

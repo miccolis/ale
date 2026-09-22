@@ -1,3 +1,5 @@
+" Author: Jeff Miccolis <jeff@miccolis.net>
+
 call ale#Set('javascript_oxlint_executable', 'oxlint')
 call ale#Set('javascript_oxlint_use_global', get(g:, 'ale_use_global_executables', 0))
 

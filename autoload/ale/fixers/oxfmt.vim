@@ -1,3 +1,6 @@
+" Author: Jeff Miccolis <jeff@miccolis.net>
+" Description: Fixing files with oxlint.
+
 call ale#Set('javascript_oxfmt_executable', 'oxfmt')
 call ale#Set('javascript_oxfmt_use_global', get(g:, 'ale_use_global_executables', 0))
 call ale#Set('javascript_oxfmt_options', '')
