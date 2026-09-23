@@ -2,6 +2,7 @@
 
 call ale#Set('javascript_oxlint_executable', 'oxlint')
 call ale#Set('javascript_oxlint_use_global', get(g:, 'ale_use_global_executables', 0))
+call ale#Set('javascript_oxlint_options', {})
 
 function! ale#handlers#oxlint#GetExecutable(buffer) abort
     return ale#path#FindExecutable(a:buffer, 'javascript_oxlint', [
@@ -39,6 +40,6 @@ function! ale#handlers#oxlint#GetProjectRoot(buffer) abort
 endfunction
 
 function! ale#handlers#oxlint#GetInitializationOptions(buffer) abort
-    let l:options = {}
+    let l:options = ale#Var(a:buffer, 'javascript_oxlint_options')
     return l:options
 endfunction
